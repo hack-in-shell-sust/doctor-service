@@ -42,4 +42,10 @@ public class DoctorResource {
         Doctor doctor = doctorService.getNearestDoctor(request);
         return doctor;
     }
+
+    @PostMapping("/nearest/center")
+    public List<Object[]> getNearestDoctorsWithDiagnosticCenters(@RequestBody NearestDoctorRequest request) {
+        List<Object[]> doctors = doctorService.getNearestDoctorsWithDiagnosticCenters(request);
+        return doctors;
+    }
 }

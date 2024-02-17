@@ -47,5 +47,12 @@ public class DoctorService extends BaseService {
         return doctors.get(0);
     }
 
+    public List<Object[]> getNearestDoctorsWithDiagnosticCenters(NearestDoctorRequest request) {
+        List<Object[]> doctors = doctorRepository.findUniqueDoctorsWithDiagnosticCenters
+                (request.getLatitude(), request.getLongitude());
+
+        return doctors;
+    }
+
 
 }
