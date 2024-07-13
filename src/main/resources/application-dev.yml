@@ -37,6 +37,6 @@ spring:
 #    password: SFgIgwXeJD5QNWpFcMLDaVvL5BFANp0K
 
 server:
-  port: 8690
+  port: 8080
 
 
