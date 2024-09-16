@@ -1,4 +1,4 @@
-package com.example.medicineservice.common.configuration;
+package com.example.doctorservice.common.configuration;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
